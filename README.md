@@ -1,1 +1,0 @@
-# web-qrcare-vn
