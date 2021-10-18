@@ -16,6 +16,7 @@ app.messaging().getToken({ vapidKey: 'BGxx-fjPINkBky_OPMHnaEt5I-Nw6T4b-tyQC9BBoX
 .then((currentToken) => {
   if (currentToken) {
     console.log('client token', currentToken)
+    localStorage.setItem('fcm-token', currentToken);
   } else {
     console.log('No registration token available. Request permission to generate one.');
   }
